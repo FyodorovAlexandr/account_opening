@@ -1,0 +1,19 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost:8081/ws/mvd"
+           targetNamespace="http://localhost:8081/ws/mvd" elementFormDefault="qualified">
+
+    <xs:element name="getMVDRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="passport" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getMVDResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="isInMVDList" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
